@@ -1,10 +1,19 @@
 // dependencias
 const debug = require('debug')('romero:intent:defaultIntent')
 
-const defaultIntent = (agent, params) => {
-  return new Promise((resolve, _reject) => {
-    debug('Default Intent!')
-    resolve()
+import RedmineHelper from '../../helpers/redmine'
+
+const defaultIntent = (_agent, _params) => {
+  return new Promise((resolve, reject) => {
+    RedmineHelper.getIssues({ limit: 2 }).then(response => {
+      console.log('===>')
+      console.log(response)
+      debug('Default Intent!')
+      resolve()
+    }, error => {
+      console.log(error)
+      reject(error)
+    })
   })
 }
 
