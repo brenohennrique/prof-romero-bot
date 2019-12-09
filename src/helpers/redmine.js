@@ -37,21 +37,30 @@ class RedmineHelper {
     })
   }
 
-  createIssue (subject, description) {
+  createIssue (subject) {
     return new Promise((resolve, reject) => {
       const options = {
         issue: {
           project_id: 1,
           tracker_id: 2,
           author_id: 2,
-          subject,
-          description
+          subject
         }
       }
-      custom_fields
-      console.log(options)
 
       this.redmine.create_issue(options, (error, data) => {
+        if (error) {
+          reject(error)
+        } else {
+          resolve(data)
+        }
+      })
+    })
+  }
+
+  getUsers (options = { status: 1 }) {
+    return new Promise((resolve, reject) => {
+      this.redmine.users(options, (error, data) => {
         if (error) {
           reject(error)
         } else {
