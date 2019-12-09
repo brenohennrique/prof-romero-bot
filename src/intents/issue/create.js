@@ -19,7 +19,7 @@ const createIssue = (agent, _params) => {
       agent.setFollowupEvent(eventCreate)
       resolve()
     }, error => {
-      debug('Erro ao criar uma tarefa ', error)
+      debug('Erro ao criar uma tarefa!', error)
       reject(error)
     })
   })
