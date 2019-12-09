@@ -8,7 +8,6 @@ const getIssueById = (agent, _params) => {
     const { id } = agent.parameters
 
     RedmineHelper.getIssueById(id).then(response => {
-
       let statusIssue = ''
 
       switch (response.issue.status.name) {

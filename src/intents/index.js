@@ -5,7 +5,8 @@ import {
 import {
   createIssue,
   getByIdIssue,
-  priorityIssue
+  priorityIssue,
+  spentHoursIssue
 } from './issue'
 
 const injectParams = params => (
@@ -20,6 +21,7 @@ const intentMap = (params = {}) => {
   map.set('create.issue.subject', injectParams(params)(createIssue))
   map.set('find.issue.id', injectParams(params)(getByIdIssue))
   map.set('find.priority', injectParams(params)(priorityIssue))
+  map.set('find.issue.total', injectParams(params)(spentHoursIssue))
 
   if (map.get(displayName) === undefined) {
     map.set(displayName, injectParams(params)(defaultIntent))
