@@ -1,1 +1,1 @@
-web: yarn run dev:debug
+web: yarn run build

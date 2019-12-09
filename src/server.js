@@ -11,7 +11,7 @@ import routes from './routes'
 
 export class Server {
   app = express()
-  port = process.env.PORT
+  port = process.env.PORT || 3000
 
   setupConfig () {
     if (NODE_ENV === 'dev') {
