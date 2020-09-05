@@ -27,7 +27,7 @@
     "dialogflow-fulfillment": "0.5.0",
     "dotenv": "8.1.0",
     "express": "4.17.1",
-    "express-basic-auth": "1.1.4",
+    "express-basic-auth": "1.1.7",
     "morgan": "1.9.1",
     "node-redmine": "0.2.1",
     "slack": "11.0.2"
