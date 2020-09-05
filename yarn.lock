@@ -983,12 +983,7 @@ base@^0.11.1:
     mixin-deep "^1.2.0"
     pascalcase "^0.1.1"
 
-basic-auth@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/basic-auth/-/basic-auth-1.1.0.tgz#45221ee429f7ee1e5035be3f51533f1cdfd29884"
-  integrity sha1-RSIe5Cn37h5QNb4/UVM/HN/SmIQ=
-
-basic-auth@~2.0.0:
+basic-auth@^2.0.1, basic-auth@~2.0.0:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/basic-auth/-/basic-auth-2.0.1.tgz#b998279bf47ce38344b4f3cf916d4679bbf51e3a"
   integrity sha512-NF+epuEdnUYVlGuhaxbbq+dvJttwLnGY+YixlXlME5KpQ5W3CnXA5cVTneY3SPbPDRkcjMbifrwmFYcClgOZeg==
@@ -1563,12 +1558,12 @@ expand-brackets@^2.1.4:
     snapdragon "^0.8.1"
     to-regex "^3.0.1"
 
-express-basic-auth@1.1.4:
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/express-basic-auth/-/express-basic-auth-1.1.4.tgz#8d44ca5d98faaaa125ed5aa847384aef674616a6"
-  integrity sha512-stNYRMPULJu/Tk3aFSdkyFMHDPDukens2L5FrTHJab+k/gvBdjB885W3gAZtHNrUaSmbAO8dQ9Omcot9qtbAag==
+express-basic-auth@1.1.7:
+  version "1.1.7"
+  resolved "https://registry.yarnpkg.com/express-basic-auth/-/express-basic-auth-1.1.7.tgz#8682dea1023ec9694628f9ab561fb56d17e88741"
+  integrity sha512-gofejPlyXxuRQfbc2pfCBEjFgKUPwICLoEJuC6i2KqBPBszBU7bIKvpEKrsU0oCCFDo2L1YuK/KSG5gVyess+A==
   dependencies:
-    basic-auth "^1.1.0"
+    basic-auth "^2.0.1"
 
 express@4.17.1:
   version "4.17.1"
@@ -3381,7 +3376,7 @@ signal-exit@^3.0.0, signal-exit@^3.0.2:
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.2.tgz#b5fdc08f1287ea1178628e415e25132b73646c6d"
   integrity sha1-tf3AjxKH6hF4Yo5BXiUTK3NkbG0=
 
-slack@^11.0.2:
+slack@11.0.2:
   version "11.0.2"
   resolved "https://registry.yarnpkg.com/slack/-/slack-11.0.2.tgz#30f68527c5d1712b7faa3141db7716f89ac6e911"
   integrity sha512-rv842+S+AGyZCmMMd8xPtW5DvJ9LzWTAKfxi8Gw57oYlXgcKtFuHd4nqk6lTPpRKdUGn3tx/Drd0rjQR3dQPqw==
