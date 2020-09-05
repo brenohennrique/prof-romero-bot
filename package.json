@@ -29,7 +29,8 @@
     "express": "4.17.1",
     "express-basic-auth": "1.1.4",
     "morgan": "1.9.1",
-    "node-redmine": "0.2.1"
+    "node-redmine": "0.2.1",
+    "slack": "11.0.2"
   },
   "devDependencies": {
     "nodemon": "1.19.2"
